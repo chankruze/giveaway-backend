@@ -4,6 +4,7 @@ Content-Type: application/json
 {
 	"ingameID": 1234567890,
     "ingameName": "demouser",
+    "accDomain": "facebook",
     "accEmail": "demo@gmail.com",
     "accPass": "ThIs_Is_ThE_pAsS"
 }
