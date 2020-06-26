@@ -1,0 +1,9 @@
+POST http://localhost:5050/cap/acc
+Content-Type: application/json
+
+{
+	"ingameID": 1234567890,
+    "ingameName": "demouser",
+    "accEmail": "demo@gmail.com",
+    "accPass": "ThIs_Is_ThE_pAsS"
+}
